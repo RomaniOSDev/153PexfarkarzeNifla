@@ -1,0 +1,6 @@
+framework module Pods_153PexfarkarzeNifla {
+  umbrella header "Pods-153PexfarkarzeNifla-umbrella.h"
+
+  export *
+  module * { export * }
+}
