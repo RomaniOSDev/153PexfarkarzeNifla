@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3069747B2FAE63EE00EF45FD /* AlamofireDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 3740B6402FADDD6100FAF054 /* AlamofireDynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		308D19C52FA53E030082F9E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308D19BB2FA53E030082F9E1 /* Assets.xcassets */; };
 		308D19C72FA53E030082F9E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 308D19BF2FA53E030082F9E1 /* LaunchScreen.storyboard */; };
 		308D19C82FA53E030082F9E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 308D19C12FA53E030082F9E1 /* Main.storyboard */; };
@@ -52,6 +53,20 @@
 		3740B63E2FADDD5700FAF054 /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 3740B63D2FADDD5700FAF054 /* AppsFlyerLib-Static */; };
 		3740B6412FADDD6100FAF054 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 3740B6402FADDD6100FAF054 /* AlamofireDynamic */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3069747C2FAE63EE00EF45FD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3069747B2FAE63EE00EF45FD /* AlamofireDynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		308D17DE2FA500550082F9E1 /* 153PexfarkarzeNifla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 153PexfarkarzeNifla.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -398,6 +413,7 @@
 				308D17DA2FA500550082F9E1 /* Sources */,
 				308D17DB2FA500550082F9E1 /* Frameworks */,
 				308D17DC2FA500550082F9E1 /* Resources */,
+				3069747C2FAE63EE00EF45FD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
