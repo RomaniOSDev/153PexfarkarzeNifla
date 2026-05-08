@@ -8,7 +8,7 @@ workflows:
           XCODE_WORKSPACE: "153PexfarkarzeNifla.xcworkspace"
           XCODE_SCHEME: "153PexfarkarzeNifla"
           BUNDLE_ID: "com.bor.p3xf4rk1rz3n9lf"
-          APP_STORE_APP_ID: 6762447465
+          APP_STORE_APP_ID: 6764544142
         xcode: latest
         cocoapods: 1.14.2
       scripts:

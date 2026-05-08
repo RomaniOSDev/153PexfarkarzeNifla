@@ -45,6 +45,12 @@
 		308D19E92FA53E030082F9E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308D19BC2FA53E030082F9E1 /* ContentView.swift */; };
 		308D19EA2FA53E030082F9E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308D19C22FA53E030082F9E1 /* SceneDelegate.swift */; };
 		308D19EB2FA53E030082F9E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308D19C32FA53E030082F9E1 /* ViewController.swift */; };
+		3740B6352FADDC9F00FAF054 /* NiflaModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740B6342FADDC9800FAF054 /* NiflaModels.swift */; };
+		3740B6372FADDCB100FAF054 /* PexfarkarzeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740B6362FADDCAB00FAF054 /* PexfarkarzeServices.swift */; };
+		3740B6392FADDCC800FAF054 /* NiflaUpdateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740B6382FADDCBF00FAF054 /* NiflaUpdateManager.swift */; };
+		3740B63B2FADDD0800FAF054 /* PexfarkarzeUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740B63A2FADDD0600FAF054 /* PexfarkarzeUI.swift */; };
+		3740B63E2FADDD5700FAF054 /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 3740B63D2FADDD5700FAF054 /* AppsFlyerLib-Static */; };
+		3740B6412FADDD6100FAF054 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 3740B6402FADDD6100FAF054 /* AlamofireDynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +95,11 @@
 		308D19C22FA53E030082F9E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		308D19C32FA53E030082F9E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		36F3FE092437162E3B6DFE04 /* Pods-153PexfarkarzeNifla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-153PexfarkarzeNifla.debug.xcconfig"; path = "Target Support Files/Pods-153PexfarkarzeNifla/Pods-153PexfarkarzeNifla.debug.xcconfig"; sourceTree = "<group>"; };
+		3740B6342FADDC9800FAF054 /* NiflaModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiflaModels.swift; sourceTree = "<group>"; };
+		3740B6362FADDCAB00FAF054 /* PexfarkarzeServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexfarkarzeServices.swift; sourceTree = "<group>"; };
+		3740B6382FADDCBF00FAF054 /* NiflaUpdateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiflaUpdateManager.swift; sourceTree = "<group>"; };
+		3740B63A2FADDD0600FAF054 /* PexfarkarzeUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexfarkarzeUI.swift; sourceTree = "<group>"; };
+		3740B6422FADDD8300FAF054 /* 153PexfarkarzeNifla.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = 153PexfarkarzeNifla.entitlements; sourceTree = "<group>"; };
 		8E92BABD2072DB7939821523 /* Pods-153PexfarkarzeNifla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-153PexfarkarzeNifla.release.xcconfig"; path = "Target Support Files/Pods-153PexfarkarzeNifla/Pods-153PexfarkarzeNifla.release.xcconfig"; sourceTree = "<group>"; };
 		C10EC7331A798BBD487A095B /* Pods_153PexfarkarzeNifla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_153PexfarkarzeNifla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3740B63E2FADDD5700FAF054 /* AppsFlyerLib-Static in Frameworks */,
+				3740B6412FADDD6100FAF054 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +256,7 @@
 		308D19A32FA53E030082F9E1 /* Export */ = {
 			isa = PBXGroup;
 			children = (
+				3740B6332FADDC8C00FAF054 /* Service */,
 				308D19A22FA53E030082F9E1 /* GridExportService.swift */,
 			);
 			path = Export;
@@ -347,6 +361,7 @@
 		308D19C42FA53E030082F9E1 /* 153PexfarkarzeNifla */ = {
 			isa = PBXGroup;
 			children = (
+				3740B6422FADDD8300FAF054 /* 153PexfarkarzeNifla.entitlements */,
 				308D19942FA53E030082F9E1 /* Core */,
 				308D19B92FA53E030082F9E1 /* Features */,
 				308D19BA2FA53E030082F9E1 /* AppDelegate.swift */,
@@ -359,6 +374,17 @@
 				308D19C32FA53E030082F9E1 /* ViewController.swift */,
 			);
 			path = 153PexfarkarzeNifla;
+			sourceTree = "<group>";
+		};
+		3740B6332FADDC8C00FAF054 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3740B63A2FADDD0600FAF054 /* PexfarkarzeUI.swift */,
+				3740B6382FADDCBF00FAF054 /* NiflaUpdateManager.swift */,
+				3740B6362FADDCAB00FAF054 /* PexfarkarzeServices.swift */,
+				3740B6342FADDC9800FAF054 /* NiflaModels.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +432,10 @@
 				Base,
 			);
 			mainGroup = 308D17D52FA500550082F9E1;
+			packageReferences = (
+				3740B63C2FADDD5700FAF054 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
+				3740B63F2FADDD6100FAF054 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 308D17DF2FA500550082F9E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -468,12 +498,15 @@
 				308D19D02FA53E030082F9E1 /* AppChrome.swift in Sources */,
 				308D19D12FA53E030082F9E1 /* Text+App.swift in Sources */,
 				308D19D22FA53E030082F9E1 /* SaveCreativePresetSheet.swift in Sources */,
+				3740B6352FADDC9F00FAF054 /* NiflaModels.swift in Sources */,
 				308D19D32FA53E030082F9E1 /* DesignVaultView.swift in Sources */,
 				308D19D42FA53E030082F9E1 /* DynamicDoodleView.swift in Sources */,
 				308D19D52FA53E030082F9E1 /* DynamicDoodleViewModel.swift in Sources */,
 				308D19D62FA53E030082F9E1 /* ActivityConfigurationView.swift in Sources */,
+				3740B6392FADDCC800FAF054 /* NiflaUpdateManager.swift in Sources */,
 				308D19D72FA53E030082F9E1 /* ActivityHubView.swift in Sources */,
 				308D19D82FA53E030082F9E1 /* ExplorePatternsView.swift in Sources */,
+				3740B6372FADDCB100FAF054 /* PexfarkarzeServices.swift in Sources */,
 				308D19D92FA53E030082F9E1 /* PresetsLibraryView.swift in Sources */,
 				308D19DA2FA53E030082F9E1 /* SessionGalleryView.swift in Sources */,
 				308D19DB2FA53E030082F9E1 /* GridExportService.swift in Sources */,
@@ -491,6 +524,7 @@
 				308D19E72FA53E030082F9E1 /* SettingsView.swift in Sources */,
 				308D19E82FA53E030082F9E1 /* AppDelegate.swift in Sources */,
 				308D19E92FA53E030082F9E1 /* ContentView.swift in Sources */,
+				3740B63B2FADDD0800FAF054 /* PexfarkarzeUI.swift in Sources */,
 				308D19EA2FA53E030082F9E1 /* SceneDelegate.swift in Sources */,
 				308D19EB2FA53E030082F9E1 /* ViewController.swift in Sources */,
 			);
@@ -525,16 +559,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = 153PexfarkarzeNifla/153PexfarkarzeNifla.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 153PexfarkarzeNifla/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Pattern Lab: Weave Grid";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access so you can take pictures of your results.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -542,7 +578,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bor.p3xf4rk1rz3n9lf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -566,16 +602,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = 153PexfarkarzeNifla/153PexfarkarzeNifla.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 153PexfarkarzeNifla/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Pattern Lab: Weave Grid";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access so you can take pictures of your results.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -583,7 +621,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bor.p3xf4rk1rz3n9lf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -741,6 +779,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3740B63C2FADDD5700FAF054 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.18.0;
+			};
+		};
+		3740B63F2FADDD6100FAF054 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3740B63D2FADDD5700FAF054 /* AppsFlyerLib-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3740B63C2FADDD5700FAF054 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
+			productName = "AppsFlyerLib-Static";
+		};
+		3740B6402FADDD6100FAF054 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3740B63F2FADDD6100FAF054 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 308D17D62FA500550082F9E1 /* Project object */;
 }
